@@ -23,25 +23,40 @@
         <h2 class="form-header"> Sign Up!</h2>
         <!-- email form group-->
         <div class="form-group">
-          <label for="email">Email:</label>
+          <label for="sign-up-email">Email:</label>
           <!--  email input group -->
           <div class="input-group">
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-envelope"></span>
             </div>
-            <input type="email" name="email" id="email" class="form-control">
+            <input type="email" name="sign-up-email" id="sign-up-email"
+            class="form-control">
           </div>
         </div>
 
         <!-- password form group-->
         <div class="form-group">
-          <label for="password">Password:</label>
+          <label for="sign-up-password">Password:</label>
           <!--  password input group -->
           <div class="input-group">
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-lock"></span>
             </div>
-            <input type="password" name="password" id="password" class="form-control">
+            <input type="password" name="sign-up-password" id="sign-up-password"
+            class="form-control">
+          </div>
+          <!-- Password Requirements -->
+          <div>
+            <ul class="input-requirements">
+              <li>
+                <span class="glyphicon glyphicon-remove"></span>
+                Must contain a non-letter
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-remove"></span>
+                Must be at least 6 character
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -53,15 +68,16 @@
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-lock"></span>
             </div>
-            <input type="password" name="confirmPassword" id="confirmPassword" class="form-control">
+            <input type="password" name="confirmPassword" id="confirmPassword"
+            class="form-control">
           </div>
+
         </div>
         <!-- submit button -->
         <button type="submit" class="btn btn-info center-block">Submit</button>
         <p class="form-text-link">Already Registered? Login</p>
       </form>
 
-<hr>
       <!-- SING IN FORM -->
         <form id="sign-in-form">
           <h2 class="form-header"> Sign in form for users</h2>
@@ -112,6 +128,8 @@
 <!--  Firebase Scripts -->
 <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
 <script src="assets/javascript/firebase/firebase_setup.js"></script>
+<!-- Main scripts -->
+<script src="assets/javascript/helper.js"></script>
 <script src="assets/javascript/main.js"></script>
 </body>
 </html>
