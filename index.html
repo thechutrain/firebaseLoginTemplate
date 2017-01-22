@@ -3,20 +3,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
   <!-- includes bootstrap 3 as default, without integrity/crossorigin -->
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   >
   <link rel="stylesheet" href="assets/css/style.css">
-
   <title>Sign in template</title>
 </head>
 <body>
 <div class="container">
-  <h2> Sign in form for users</h2>
 
-</div>
+  <!-- form row -->
+  <div class="row">
+    <!--  Container for the form -->
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 form-container">
+    <!-- SIGN UP FORM -->
+      <form id="sign-up-form">
+        <h2 class="form-header"> Sign Up!</h2>
+        <!-- email form group-->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <!--  email input group -->
+          <div class="input-group">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-envelope"></span>
+            </div>
+            <input type="email" name="email" id="email" class="form-control">
+          </div>
+        </div>
+
+        <!-- password form group-->
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <!--  password input group -->
+          <div class="input-group">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-lock"></span>
+            </div>
+            <input type="password" name="password" id="password" class="form-control">
+          </div>
+        </div>
+
+        <!-- confirm password form group-->
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <!--  confrim password input group -->
+          <div class="input-group">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-lock"></span>
+            </div>
+            <input type="password" name="confirmPassword" id="confirmPassword" class="form-control">
+          </div>
+        </div>
+        <!-- submit button -->
+        <button type="submit" class="btn btn-info center-block">Submit</button>
+        <p class="form-text-link">Already Registered? Login</p>
+      </form>
+
+<hr>
+      <!-- SING IN FORM -->
+        <form id="sign-in-form">
+          <h2 class="form-header"> Sign in form for users</h2>
+          <!-- email form group-->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <!--  email input group -->
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-envelope"></span>
+              </div>
+              <input type="email" name="email" id="email" class="form-control">
+            </div>
+          </div>
+
+          <!-- password form group-->
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <!--  password input group -->
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-lock"></span>
+              </div>
+              <input type="password" name="password" id="password" class="form-control">
+            </div>
+          </div>
+
+          <!-- submit button -->
+          <button type="submit" class="btn btn-info center-block">Submit</button>
+          <p class="form-text-link">New User? Sign up here</p>
+        </form>
+
+
+
+
+    </div>
+
+  </div>
+
+
+</div> <!-- closes container-->
+
 
 
 
